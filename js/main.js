@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     document.querySelector("#sub").value = "Sending..";
     let data = new FormData(form);
-    fetch('https://script.google.com/macros/s/AKfycbwM3K1foL2F5Zz-MnHyI72279TdMZWBgZQc5Skid4S4ZHgUBYv63f2YL3593DiRHmpXKw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwHw-DuhxUZHPRmG4cOkootStPMleLdfrEjuVlQdrJWd-cSieYfQ8GmCrEJKDwbv2WDzQ/exec', {
         method: "POST",
         body: data
     })
