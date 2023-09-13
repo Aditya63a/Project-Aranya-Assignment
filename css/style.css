@@ -170,10 +170,15 @@ h3 {
   z-index: 1000;
 }
 
-.navbar-toggler:focus {
-  outline: none;
+.navbar-toggler {
+  outline: unset;
   border: none;
-  box-shadow: none;
+  box-shadow: unset;
+}
+.navbar-toggler:focus {
+  outline: unset;
+  border: none;
+  box-shadow: unset;
 }
 
 .navbar .nav-item .nav-link {
