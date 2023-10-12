@@ -20,12 +20,15 @@ navBar.forEach(function (a) {
 
 //  Form Data to Googlesheet
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxQErFit6pIic1QxwH6kZrQ1DZ_EMKhR0gnMn0dIcOtJ8IIG53xXuk5g18jEyyxWrXHew/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxQErFit6pIic1QxwH6kZrQ1DZ_EMKhR0gnMn0dIcOtJ8IIG53xXuk5g18jEyyxWrXHew/exec';
+
+const submit = document.getElementById("sub");
 
 const form = document.forms['contactform']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
+    submit.innerText = "Submiting...";
     fetch(scriptURL, {
         method: 'POST',
         body: new FormData(form)
@@ -33,4 +36,5 @@ form.addEventListener('submit', e => {
         .then(response => alert("Thank you! for reaching us successfully."))
         .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
+
 })
