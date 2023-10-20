@@ -301,10 +301,13 @@ h3 {
     text-transform: capitalize;
 }
 
-.search-inner .search-icon {
+
+
+.search-inner .search-icon i {
+    font-size: 40px;
     background-color: var(--color-mediumseagreen);
-    padding: 20px;
-    text-align: end;
+    padding: 12px;
+    border-radius: 9px;
 }
 
 /* ============================================= */
